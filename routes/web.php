@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PeriksaController;
+use App\Http\Controllers\HomeController;
+Route::get('/dokter', [HomeController::class, 'dokter'])-> name('dokter');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/periksa/create', [PeriksaController::class, 'create'])->name('periksa.create');
@@ -24,3 +26,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
