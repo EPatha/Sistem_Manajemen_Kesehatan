@@ -186,7 +186,7 @@
                     <i class="bi bi-person"></i>
                     <h4>Registrasi Pasien</h4>
                     <p>Daftar sebagai pasien untuk membuat janji temu dengan dokter kami secara online.</p>
-                    <a href="{{route('register.pasien')}}" class="cta-button">Daftar Sekarang</a>
+                    <a href="<?php echo e(route('register.pasien')); ?>" class="cta-button">Daftar Sekarang</a>
                 </div>
             </div>
             <div class="col-md-4">
@@ -194,7 +194,7 @@
                     <i class="bi bi-person-check"></i>
                     <h4>Login Dokter</h4>
                     <p>Dokter dapat login untuk melihat jadwal pasien dan melayani konsultasi.</p>
-                    <a href="{{route('login.dokter')}}" class="cta-button">Login Sebagai Dokter</a>
+                    <a href="<?php echo e(route('login.dokter')); ?>" class="cta-button">Login Sebagai Dokter</a>
                 </div>
             </div>
             <div class="col-md-4">
@@ -202,7 +202,7 @@
                     <i class="bi bi-shield-lock"></i>
                     <h4>Login Admin</h4>
                     <p>Admin dapat mengelola data pasien, dokter, dan jadwal temu.</p>
-                    <a href="{{route('login.admin')}}" class="cta-button">Login Sebagai Admin</a>
+                    <a href="<?php echo e(route('login.admin')); ?>" class="cta-button">Login Sebagai Admin</a>
                 </div>
             </div>
         </div>
@@ -251,3 +251,4 @@
 </body>
 
 </html>
+<?php /**PATH /home/ep/Documents/poliklink-bengkel-koding-main/resources/views/welcome.blade.php ENDPATH**/ ?>
