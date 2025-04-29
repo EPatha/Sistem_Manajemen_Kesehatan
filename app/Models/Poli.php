@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Obat extends Model
+class Poli extends Model
 {
-    protected $table = 'obats';
+    protected $table = 'polis';
     protected $guarded = ['id'];
 }
