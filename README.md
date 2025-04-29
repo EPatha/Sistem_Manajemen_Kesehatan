@@ -1,6 +1,6 @@
 
 
-##  Cara penggunaan projek ini (Poliklinik Bengkel Koding Udinus)
+##  Cara penggunaan projek ini (Manajemen Kesehatan Bengkel Koding Udinus)
 - 🔨 clone projek dengan
 ```yaml
 $ git clone https://github.com/raihanfaiq72/poliklink-bengkel-koding.git
@@ -55,4 +55,4 @@ $ localhost:8000
 
 
 ## 📫 Tentang developer
-Muhammad Faiq Raihan Dhiyaulhak - A11.2021.13833
+Ephesians Prismaranatha - A11.2022.14632
