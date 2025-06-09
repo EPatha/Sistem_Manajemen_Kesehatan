@@ -63,11 +63,11 @@
                                         <td>{{ $loop->iteration }}</td>
 
                                         <!-- Nama Poli -->
-                                        <td>{{ $polri->jadwalPeriksa->dokter->poli->nama_poli }}</td>
+                                        <td>{{ optional(optional(optional($polri->jadwalPeriksa)->dokter)->poli)->nama_poli ?? 'Tidak Tersedia' }}</td>
 
                                         <!-- Nama Dokter -->
-                                        <td>{{ $polri->jadwalPeriksa->dokter ? $polri->jadwalPeriksa->dokter->nama_dokter : 'Data Tidak Tersedia' }}</td>
-                                        
+                                        <td>{{ optional(optional($polri->jadwalPeriksa)->dokter)->nama_dokter ?? 'Tidak Tersedia' }}</td>
+
                                         <td>{{ $polri->jadwalPeriksa->hari ?? 'Tidak Tersedia' }}</td>
                                         <td>{{ $polri->jadwalPeriksa->jam_mulai ?? 'Tidak Tersedia' }}</td>
                                         <td>{{ $polri->jadwalPeriksa->jam_selesai ?? 'Tidak Tersedia' }}</td>

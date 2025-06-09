@@ -21,7 +21,7 @@
 
                 ((-- Kondisi Sidebar --))
                 {{-- Example of a sidebar item with a link --}}
-                @if(request()-?is("dokter"))
+                @if(request()->is("dokter"))
                 <li class="nav-item">
                 <a href="#" class="nav-link active">
                 <i class="far fa-circle nav-icon"></i>

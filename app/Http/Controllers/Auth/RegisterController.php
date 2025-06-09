@@ -9,13 +9,13 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
     // protected $redirectTo = '/home';
 use Illuminate\Support\Facades\Auth;
-protected function redirectTo()
-        {
-            return Auth::user()->role === 'dokter' ? "/dokter" : "home";
-        }
-    
+
 class RegisterController extends Controller
 {
+    protected function redirectTo()
+    {
+        return Auth::user()->role === 'dokter' ? "/dokter" : "home";
+    }
     /*
     |--------------------------------------------------------------------------
     | Register Controller

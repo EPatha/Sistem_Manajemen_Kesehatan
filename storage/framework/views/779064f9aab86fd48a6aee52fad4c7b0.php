@@ -61,11 +61,11 @@
                                         <td><?php echo e($loop->iteration); ?></td>
 
                                         <!-- Nama Poli -->
-                                        <td><?php echo e($polri->jadwalPeriksa->dokter->poli->nama_poli); ?></td>
+                                        <td><?php echo e(optional(optional(optional($polri->jadwalPeriksa)->dokter)->poli)->nama_poli ?? 'Tidak Tersedia'); ?></td>
 
                                         <!-- Nama Dokter -->
-                                        <td><?php echo e($polri->jadwalPeriksa->dokter ? $polri->jadwalPeriksa->dokter->nama_dokter : 'Data Tidak Tersedia'); ?></td>
-                                        
+                                        <td><?php echo e(optional(optional($polri->jadwalPeriksa)->dokter)->nama_dokter ?? 'Tidak Tersedia'); ?></td>
+
                                         <td><?php echo e($polri->jadwalPeriksa->hari ?? 'Tidak Tersedia'); ?></td>
                                         <td><?php echo e($polri->jadwalPeriksa->jam_mulai ?? 'Tidak Tersedia'); ?></td>
                                         <td><?php echo e($polri->jadwalPeriksa->jam_selesai ?? 'Tidak Tersedia'); ?></td>
